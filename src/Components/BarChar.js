@@ -1,109 +1,91 @@
 // import "./styles.css";
-import React, { FunctionComponent } from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts";
-import { scaleOrdinal } from "d3-scale";
-import { schemeCategory10 } from "d3-scale-chromatic";
+import React, { FunctionComponent, useState, useEffect, useRef } from "react";
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+
+
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+);
+// https://www.chartjs.org/docs/latest/getting-started/v3-migration.html
+export const options = {
+    responsive: true,
+    scales: {
+        x: {
+            grid: {
+                display: false
+            }
+        },
+        y: {
+            suggestedMin: 0,
+            suggestedMax: 10,
+            grid: {
+                display: false
+            }
+
+        }
+    },
+    plugins: {
+
+        legend: {
+            display: false
+        },
+        title: {
+            display: false,
+            text: 'Chart.js Bar Chart',
+        },
+    },
+};
+
+const labels = ['React Js', 'Node Js', 'JavaScript', 'Strapi.io', 'PostgreSQL', 'Mongo DB'];
+
+export const data = {
+    labels: labels,
+    datasets: [{
+        label: '',
+        data: [8.5, 8.5, 9, 7, 8, 6],
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(255, 205, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+        ],
+        borderColor: [
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(54, 162, 235)',
+            'rgb(153, 102, 255)',
+        ],
+        borderWidth: 1
+    }]
+};
+
+// ChartJS.register(LineElement, PointElement, LinearScale, Title);
 //https://codesandbox.io/s/color-each-bar-differently-devextreme-charts-forked-lewf7?file=/App.js
-const colors = [
-    "#ffbb11",
-    "#ecf0f1",
-    "#50AF95",
-    "#f3ba2f",
-    "#2a71d0"
-];
-
-const data = [
-    {
-        name: "Java Script",
-        uv: 7,
-        pv: 2400,
-        amt: 'good'
-    },
-    {
-        name: "React Js",
-        uv: 7,
-        pv: 1398,
-        amt: 'best'
-    },
-    {
-        name: "Node Js",
-        uv: 7,
-        pv: 9800,
-        amt: 'best'
-    },
-    {
-        name: "PostgreSql",
-        uv: 7,
-        pv: 3908,
-        amt: 'best'
-    },
-    {
-        name: "MongoDB",
-        uv: 7,
-        pv: 4800,
-        amt: 'best'
-    },
-    {
-        name: "ES-6",
-        uv: 7,
-        pv: 3800,
-        amt: 'best'
-    },
-    {
-        name: "Strapi",
-        uv: 7,
-        pv: 4300,
-        amt: 'best'
-    },
-
-];
-
-const getPath = (x, y, width, height) => {
-    return `M${x},${y + height}C${x + width / 2},${y} ${x + width / 2.5},${y
-        } 
-  ${x + width / 2}, ${y}
-  C${x + width / 2},${y} ${x + (2 * width) / 3},${y} ${x + width
-        }, ${y + height}
-  Z`;
-};
-
-const TriangleBar = (props) => {
-    const { fill, x, y, width, height } = props;
-
-    return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
-};
-
 
 function BarChar() {
     return (
-        <div>
-            <BarChart
-                width={700}
-                height={300}
-                data={data}
-                margin={{
-                    top: 20,
-                    right: 30,
-                    left: 20,
-                    bottom: 5
-                }}
-            >
-                {/* <CartesianGrid strokeDasharray="3 3" /> */}
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Bar
-                    dataKey='uv'
-                    fill="#8884d8"
 
-                    // shape={<TriangleBar />}
-                    label={{ position: "top" }}
-                >
-                    {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-                    ))}
-                </Bar>
-
-            </BarChart>
+        <div className=" p-20  bar-chart-alignment">
+            <Bar options={options} data={data} />
+           
         </div>
     )
 }

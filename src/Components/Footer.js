@@ -2,8 +2,10 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='bg-black text-white h-10 px-9'>
-            Copyright 2021 Pradhyumn Soni. All Rights Reserved.
+        <div className='bg-black text-gray-400 h-6 px-6  flex justify-between cursor-default'>
+            <span>  Site is under development... </span>
+
+            <span>  Updated At : 24 June 2022   </span>
         </div>
     )
 }

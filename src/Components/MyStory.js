@@ -1,8 +1,6 @@
 import React from 'react'
 import TagCloud, { renderData } from 'd3-tagcloud-for-react';
 
-
-// import randomColor from 'randomcolor';
 function MyStory() {
     return (
         <div className=' h-screen w-full'>
@@ -11,9 +9,6 @@ function MyStory() {
         </div>
     )
 }
-
-
-
 
 function TagCloudD3() {
 
