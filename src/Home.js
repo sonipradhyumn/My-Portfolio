@@ -14,8 +14,8 @@ import Footer from './Components/Footer'
 // import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaCarSide } from 'react-icons/fa';
 
 function Home() {
-    let info = window.navigator
-    console.log('info', info.platform)
+
+    console.log(`Website is opened on "${window.navigator.userAgentData.platform}" device`)
 
     const [scroll, setScroll] = useState(0)
     // const [siteAlert, setSiteAlert] = useState(true)
@@ -34,7 +34,10 @@ function Home() {
             setScroll(window.scrollY)
         });
 
-        alert("I recommend you to open this site in desktop. Site is Under Development")
+        if (window.navigator.userAgentData.mobile) {
+            alert("I recommend you to open this site in desktop. Mobile version is Under Development")
+        }
+
     }, []);
 
 

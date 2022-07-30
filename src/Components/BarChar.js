@@ -1,5 +1,5 @@
-// import "./styles.css";
-import React, { FunctionComponent, useState, useEffect, useRef } from "react";
+
+import React from "react";
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -11,7 +11,6 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
-
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -21,6 +20,9 @@ ChartJS.register(
     Legend
 );
 // https://www.chartjs.org/docs/latest/getting-started/v3-migration.html
+// ChartJS.register(LineElement, PointElement, LinearScale, Title);
+//https://codesandbox.io/s/color-each-bar-differently-devextreme-charts-forked-lewf7?file=/App.js
+
 export const options = {
     responsive: true,
     scales: {
@@ -35,11 +37,9 @@ export const options = {
             grid: {
                 display: false
             }
-
         }
     },
     plugins: {
-
         legend: {
             display: false
         },
@@ -77,15 +77,10 @@ export const data = {
     }]
 };
 
-// ChartJS.register(LineElement, PointElement, LinearScale, Title);
-//https://codesandbox.io/s/color-each-bar-differently-devextreme-charts-forked-lewf7?file=/App.js
-
 function BarChar() {
     return (
-
         <div className=" p-20  bar-chart-alignment">
             <Bar options={options} data={data} />
-           
         </div>
     )
 }

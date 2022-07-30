@@ -17,6 +17,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* INTRODUCTION CSS */
 .back-img {
   /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1445' height='600' preserveAspectRatio='none' viewBox='0 0 1445 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1039%26quot%3b)' fill='none'%3e%3crect width='1445' height='600' x='0' y='0' fill='rgba(1%2c 70%2c 133%2c 0.98)'%3e%3c/rect%3e%3cpath d='M1394.72837271516 536.8750531651642L1405.240635550408 436.8575533120373 1305.223135697281 426.3452904767895 1294.710872862033 526.3627903299165z' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1382.627%2c213.985C1421.92%2c213.095%2c1455.088%2c187.835%2c1474.696%2c153.773C1494.256%2c119.795%2c1500.657%2c77.734%2c1480.376%2c44.181C1460.66%2c11.564%2c1420.734%2c2.109%2c1382.627%2c1.455C1343.004%2c0.775%2c1300.145%2c7.278%2c1278.885%2c40.722C1256.371%2c76.138%2c1261.483%2c122.108%2c1283.041%2c158.113C1303.998%2c193.115%2c1341.841%2c214.909%2c1382.627%2c213.985' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M541.054%2c459.307C592.367%2c461.674%2c643.951%2c441.754%2c671.212%2c398.217C700.093%2c352.093%2c704.821%2c291.231%2c674.662%2c245.932C646.859%2c204.173%2c591.193%2c201.003%2c541.054%2c202.721C494.824%2c204.305%2c446.259%2c214.936%2c422.417%2c254.575C397.972%2c295.217%2c406.374%2c346.064%2c430.153%2c387.099C453.858%2c428.006%2c493.825%2c457.129%2c541.054%2c459.307' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M721.227%2c573.333C742.791%2c572.579%2c756.939%2c552.825%2c766.691%2c533.577C775.341%2c516.504%2c778.084%2c496.601%2c768.496%2c480.037C758.925%2c463.502%2c740.319%2c455.727%2c721.227%2c455.034C700.627%2c454.287%2c678.564%2c458.909%2c667.62%2c476.378C656.12%2c494.733%2c659.417%2c518.006%2c669.898%2c536.962C680.773%2c556.631%2c698.766%2c574.119%2c721.227%2c573.333' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M835.1627466739095 94.84451309865257L693.4596175132671 99.79289540833074 698.4079998229452 241.49602456897316 840.1111289835877 236.547642259295z' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1425.9667889847256 92.43666706765546L1461.9935611146436 3.267276997870397 1372.8241710448588-32.75949513204776 1336.7973989149405 56.4098949377373z' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1533.037%2c862.732C1599.385%2c866.87%2c1662.646%2c825.152%2c1691.554%2c765.289C1717.6%2c711.353%2c1693.022%2c650.398%2c1659.565%2c600.718C1630.63%2c557.752%2c1584.83%2c529.015%2c1533.037%2c529.908C1482.724%2c530.776%2c1439.309%2c561.552%2c1413.848%2c604.955C1388.046%2c648.941%2c1384.026%2c701.157%2c1405.428%2c747.444C1431.214%2c803.212%2c1471.715%2c858.908%2c1533.037%2c862.732' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M432.877%2c29.691C448.152%2c29.773%2c461.413%2c20.763%2c469.67%2c7.912C478.777%2c-6.262%2c485.064%2c-24.008%2c476.818%2c-38.699C468.451%2c-53.606%2c449.968%2c-57.99%2c432.877%2c-57.641C416.494%2c-57.307%2c399.879%2c-51.299%2c391.936%2c-36.967C384.186%2c-22.984%2c388.396%2c-6.103%2c396.763%2c7.52C404.687%2c20.421%2c417.737%2c29.61%2c432.877%2c29.691' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1031.2560245032385 528.2627860164663L1153.8353712599192 624.0322677440437 1249.6048529874965 501.4529209873631 1127.0255062308158 405.6834392597857z' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M155.34817854855945 221.37865271410507L157.72375817180372 357.4755181805756 293.82062363827424 355.0999385573313 291.44504401502996 219.0030730908608z' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M927.003277036731 563.0660344795467L1054.0229926354093 463.8273563993283 954.7843145551909 336.80764080065 827.7645989565126 436.0463188808684z' fill='rgba(6%2c 107%2c 184%2c 0.27)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1039'%3e%3crect width='1445' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e"); */
@@ -26,9 +27,10 @@ html {
 }
 
 .contact-img {
-  /* background-image:url('https://images.pexels.com/photos/1420709/pexels-photo-1420709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+  /* background-image:url('https://images.pexels.com/photos/4386357/pexels-photo-4386357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
   /* background-image:url('https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-  background-image: url('https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  /* background-image: url('https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+  background-image: url('https://images.pexels.com/photos/227433/pexels-photo-227433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
 .work-width {
@@ -214,7 +216,11 @@ html {
 }
 
 .layer {
-  background-color: #05050598;
+  background-color: #05050581;
+}
+
+.layer-2 {
+  background-color: #05050560;
 }
 
 .arrowtest-east {
@@ -329,7 +335,7 @@ html {
   height: 100%;
   border-width: 0.8vmin 0.8vmin 0 0;
   border-style: solid;
-  border-color: rgba(236, 68, 68, 0.641);
+  border-color: rgba(236, 68, 68, 0.534);
   transition: 0.2s ease;
   display: block;
   transform-origin: 100% 0;
@@ -357,8 +363,8 @@ html {
   display: block;
   width: 30px;
   height: 30px;
-  border-top: 5px solid rgba(236, 68, 68, 0.282);
-  border-left: 5px solid rgba(236, 68, 68, 0.282);
+  border-top: 5px solid rgba(236, 68, 68, 0.432);
+  border-left: 5px solid rgba(236, 68, 68, 0.432);
   transform: rotate(0deg);
   margin: -10px;
   animation: animate 4s infinite;
@@ -406,38 +412,24 @@ html {
 
 .bg-small {
   /* background-image: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80'); */
-    background-image: url('https://images.unsplash.com/photo-1623594616675-3f757bb58ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-image: url('https://images.unsplash.com/photo-1623594616675-3f757bb58ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   /* background-position:center; */
   background-size: cover;
 }
 
-.check {
-  font: 22px Arial;
+.contact-input {
+  font: 24px Arial;
   display: inline-block;
   padding: 1em 2em;
   text-align: center;
   color: black;
   background: red;
-  /* default color */
-
-  /* "to left" / "to right" - affects initial color */
-  background: linear-gradient(to left, rgba(128, 114, 114, 0.281) 50%, rgb(204, 180, 180) 50%) right;
+  outline: none;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.253) 50%, rgba(22, 20, 20, 0.466) 50%) right;
   background-size: 200%;
   transition: .4s ease-out;
 }
 
-
 .About_me {
-  /* font-family: 'Lobster', cursive; */
-  /* font-family: 'Indie Flower', cursive; */
-  /* font-family: 'Permanent Marker', cursive; */
-  /* font-family: 'Playfair Display SC', serif; */
-  /* font-family: 'Playfair Display SC', serif; */
-  /* font-family: 'Alumni Sans Inline One', cursive; */
-  /* font-family: 'Londrina Solid', cursive; */
-  /* font-family: 'Satisfy', cursive; */
   font-family: 'Aref Ruqaa', serif;
-  /* font-size: 28px; */
-  /* font-family: 'Courgette', cursive; */
-
 }

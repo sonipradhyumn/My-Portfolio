@@ -4,8 +4,7 @@ function Footer() {
     return (
         <div className='bg-black text-gray-400 h-6 px-6  flex justify-between cursor-default'>
             <span>  Site is under development... </span>
-
-            <span>  Updated At : 24 June 2022   </span>
+            <span>  Updated At : 31 July 2022   </span>
         </div>
     )
 }

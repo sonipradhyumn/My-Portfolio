@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
-
 function ContactMe() {
     return (
         <div className='grid w-full h-screen border justify-center items-center'>
@@ -10,16 +9,12 @@ function ContactMe() {
                 <h5><p>Do you speak Hindi? It's ok if you don't, </p>
                     I speak English too.</h5>
             </div>
-            
             <div className='flex justify-between w-40 border-2'>
                 <FaFacebookF />
                 <FaInstagram />
                 <FaTwitter />
                 <FaLinkedinIn />
-
-
             </div>
-
             <h2> Send an Email</h2>
             <div>
                 <input className='border' placeholder=' name'></input>

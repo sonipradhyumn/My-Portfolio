@@ -1,22 +1,20 @@
 import React, { useEffect, useRef } from 'react'
-
 import BarChar from './BarChar'
-
-
 import { Wave, Random } from 'react-animated-text';
 
-/*{ 
- i will use -
 
-    https://www.npmjs.com/package/react-animated-text
+// i will use -
+//      https://www.npmjs.com/package/react-animated-text
+// may be in graph
+// https://www.adhamdannaway.com/about
 
-}*/
 
 function TechnicalSkills({ AddComponentHeight }) {
 
     const ref = useRef(null);
+
     useEffect(() => {
-        AddComponentHeight('TechnicalSkills', ref.current?.clientHeight )
+        AddComponentHeight('TechnicalSkills', ref.current?.clientHeight)
     }, [])
 
     return (
@@ -31,6 +29,3 @@ function TechnicalSkills({ AddComponentHeight }) {
 }
 
 export default TechnicalSkills
-
-// may be in graph
-// https://www.adhamdannaway.com/about

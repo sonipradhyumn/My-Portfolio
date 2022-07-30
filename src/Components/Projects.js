@@ -10,7 +10,6 @@ function Projects() {
             <div className='flex  justify-center '>
                 <div className='flex flex-wrap min-work-width justify-between items-center text-center  '>
                     {Projects.map(
-
                         (project, key) => {
                             return (<div className='' >
                                 <div key={key} className=' h-10 w-10 sm:h-32 sm:w-32 mx-10 my-5 bg-green-100 flex items-center justify-center rounded-full '>

@@ -11,7 +11,7 @@ function WorkExperience({ AddComponentHeight }) {
     }, [])
 
     return (
-        <div ref={ref} className=' h-screen w-full overflow-hidden  justify-center items-center p-9'>
+        <div ref={ref} className=' h-full w-full overflow-hidden  justify-center items-center p-9'>
             <h1 className="font-serif italic text-neutral-900 font-semibold text-2xl lg:text-4xl  py-5  cursor-default ">Work Experience </h1>
             <TimeLine />
         </div>

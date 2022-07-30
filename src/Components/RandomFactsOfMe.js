@@ -2,9 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import search from '../Image/facts/plant.gif'
 import Tea from '../Image/facts/espresso.gif'
 import Movie from '../Image/facts/video.gif'
-
 import Gardening from '../Image/facts/plant.gif'
-
 import Cooking from '../Image/facts/saucepan.gif'
 import Clean from '../Image/facts/search.gif'
 import Social from '../Image/facts/social-media.gif'
@@ -15,20 +13,15 @@ function RandomFactsOfMe({ AddComponentHeight }) {
     const [gifNumber, setGifNumber] = useState(0)
 
     const ref = useRef(null);
+
     useEffect(() => {
         AddComponentHeight('RandomFactsOfMe', ref.current?.clientHeight)
-    }, [])
-
-
-    useEffect(() => {
         setFactGif(0);
     }, [])
 
     function setFactGif(number) {
         setGifNumber(number);
     }
-
-
 
     return (
         <div ref={ref} className='bg-white justify-center items-center w-full h-full p-9'>
@@ -62,29 +55,21 @@ function RandomFactsOfMe({ AddComponentHeight }) {
                     <span onMouseOver={() => { setFactGif(0) }} className={`transition-transform hover:-translate-y-1 duration-500 block font-serif ml-16 text-center font-semibold p-5 shadow-md bg-gradient-to-r from-zinc-200 to-transparent ${gifNumber === 0 ? ' shadow-zinc-600' : ''}`} >
                         I drink a lot of tea
                     </span>
-
                     <span onMouseOver={() => { setFactGif(1); }} className={`transition-transform hover:-translate-y-1 block font-serif mr-16 text-center font-semibold p-5  bg-gradient-to-l from-zinc-200 to-transparent ${gifNumber === 1 ? 'shadow-md shadow-zinc-600' : 'shadow-lg'}`} >
                         I'm huge admirer of  <span className='underline'>MCU</span>
                     </span>
-
                     <span onMouseOver={() => { setFactGif(2); }} className={`transition-transform hover:-translate-y-1 block font-serif ml-16 text-center font-semibold p-5 shadow-md bg-gradient-to-r from-zinc-200 to-transparent ${gifNumber === 2 ? 'shadow-zinc-600' : ''}`}>
                         Gardening is my zen time
                     </span>
-
                     <span onMouseOver={() => { setFactGif(3); }} className={`transition-transform hover:-translate-y-1 block font-serif mr-16 text-center font-semibold p-5  bg-gradient-to-l from-zinc-200 to-transparent ${gifNumber === 3 ? 'shadow-md shadow-zinc-600' : 'shadow-lg'}`}>
                         I love to cook (and eat)
                     </span>
-
                     <span onMouseOver={() => { setFactGif(4); }} className={`transition-transform hover:-translate-y-1 block font-serif  ml-16 text-center font-semibold p-5 shadow-md bg-gradient-to-r from-zinc-200 to-transparent ${gifNumber === 4 ? 'shadow-zinc-600' : ''}`}>
                         I'm a bit of a clean freak
                     </span>
-
                     <span onMouseOver={() => { setFactGif(5); }} className={`transition-transform hover:-translate-y-1 block font-serif mr-16 text-center font-semibold p-5  bg-gradient-to-l from-zinc-200 to-transparent ${gifNumber === 5 ? 'shadow-md shadow-zinc-600' : 'shadow-lg'}`}>
-                        {/* I want to live on Pandora */}
-
                         I'm slightly addicted to Twitter and instagram
                     </span>
-
                     <span onMouseOver={() => { setGifNumber(6); }} className={`transition-transform hover:-translate-y-1 block font-serif ml-16 text-center font-semibold p-5 shadow-md bg-gradient-to-r from-zinc-200 to-transparent ${gifNumber === 6 ? 'shadow-zinc-400' : ''}`}>
                         Yoda is my mentor
                     </span>

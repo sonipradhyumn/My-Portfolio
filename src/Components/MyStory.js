@@ -5,7 +5,6 @@ function MyStory() {
     return (
         <div className=' h-screen w-full'>
             <TagCloudD3 />
-
         </div>
     )
 }
@@ -132,13 +131,10 @@ function TagCloudD3() {
         <div>
             <TagCloud
                 className='tag-cloud'
-                // rotate={() => Math.round(Math.random() * 180)}
                 spiral={1}
                 style={{
                     fontFamily: 'sans-serif',
-                    // fontSize: () => Math.round(Math.random() * 50) + 16,
                     fontSize: 30,
-                    // color: () => randomColor(colorarray),
                     padding: 5,
                     width: '100%',
                     height: '600px',
@@ -162,7 +158,5 @@ function TagCloudD3() {
         </div>
     )
 }
-
-
 
 export default MyStory
