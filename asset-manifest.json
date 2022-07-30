@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.984720e6.css",
-    "main.js": "/My-Portfolio/static/js/main.04572ad3.js",
-    "static/js/787.ecc82bb5.chunk.js": "/My-Portfolio/static/js/787.ecc82bb5.chunk.js",
+    "main.css": "/My-Portfolio/static/css/main.ffb20bcd.css",
+    "main.js": "/My-Portfolio/static/js/main.d79805ee.js",
+    "static/js/787.f59dfc3b.chunk.js": "/My-Portfolio/static/js/787.f59dfc3b.chunk.js",
     "static/media/social-media.gif": "/My-Portfolio/static/media/social-media.c425a61ef0966f7c2ac0.gif",
     "static/media/plant.gif": "/My-Portfolio/static/media/plant.d22d6a29a1c39dbf6975.gif",
     "static/media/saucepan.gif": "/My-Portfolio/static/media/saucepan.2f54aa30f87955c61b79.gif",
@@ -11,14 +11,15 @@
     "static/media/espresso.gif": "/My-Portfolio/static/media/espresso.4ab04f4eb2479945161b.gif",
     "static/media/yoda.png": "/My-Portfolio/static/media/yoda.cdf95488ce93a472f7c3.png",
     "static/media/Pradhyumn-soni-14.png": "/My-Portfolio/static/media/Pradhyumn-soni-14.6bade33cf5b9170bbefd.png",
+    "static/media/up_arrow.svg": "/My-Portfolio/static/media/up_arrow.baee1d998e79e795c8bd7678402279fa.svg",
     "static/media/logo.svg": "/My-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/My-Portfolio/index.html",
-    "main.984720e6.css.map": "/My-Portfolio/static/css/main.984720e6.css.map",
-    "main.04572ad3.js.map": "/My-Portfolio/static/js/main.04572ad3.js.map",
-    "787.ecc82bb5.chunk.js.map": "/My-Portfolio/static/js/787.ecc82bb5.chunk.js.map"
+    "main.ffb20bcd.css.map": "/My-Portfolio/static/css/main.ffb20bcd.css.map",
+    "main.d79805ee.js.map": "/My-Portfolio/static/js/main.d79805ee.js.map",
+    "787.f59dfc3b.chunk.js.map": "/My-Portfolio/static/js/787.f59dfc3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.984720e6.css",
-    "static/js/main.04572ad3.js"
+    "static/css/main.ffb20bcd.css",
+    "static/js/main.d79805ee.js"
   ]
 }
