@@ -37,7 +37,7 @@ function Header({ scroll, componentsHeights }) {
                 <div className={` font-serif`} >
                     EDUCATION
                 </div> */}
-                <div onClick={(e) => { window.scrollTo(0, heightTillContactMe) }} className={` cursor-pointer font-sans font-medium ${scroll >= heightTillContactMe ? 'text-red-400' : ''}`} >
+                <div onClick={(e) => { window.scrollTo(0, heightTillContactMe) }} className={` cursor-pointer font-sans font-medium ${scroll >= heightTillContactMe -60 ? 'text-red-400' : ''}`} >
                     CONTACT
                 </div>
             </div>
